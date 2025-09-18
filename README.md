@@ -33,44 +33,14 @@ For scripts that interact with the Postman API, set the following environment va
 
 You can set these in your shell or in a `.env` file.
 
-**If you use a `.env` file, run scripts with:**
+### Running Scripts
+Run any script with:
+```bash
+node <script.mjs>
+```
+If you use a `.env` file for environment variables, use:
 ```bash
 node --env-file=.env <script.mjs>
-```
-This ensures environment variables are loaded from your `.env` file.
-
-### Running Scripts
-
-#### Add a Response to a Request
-Adds a sample response to a request named `test` in `test.postman_collection.json`:
-```bash
-node addResponseToRequest.mjs
-# or, if using .env:
-node --env-file=.env addResponseToRequest.mjs
-```
-
-#### Delete All Collections in a Workspace
-Deletes all collections in the specified workspace:
-```bash
-node deleteAllCollections.mjs
-# or, if using .env:
-node --env-file=.env deleteAllCollections.mjs
-```
-
-#### List Collections with Variables
-Lists all collections and their collection-level variables:
-```bash
-node getCollectionsWithVariables.mjs
-# or, if using .env:
-node --env-file=.env getCollectionsWithVariables.mjs
-```
-
-#### List All Folders in Collections
-Lists all folders (with more than one item) in each collection:
-```bash
-node listAllFolders.mjs
-# or, if using .env:
-node --env-file=.env listAllFolders.mjs
 ```
 
 ## License
