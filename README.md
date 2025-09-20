@@ -6,6 +6,7 @@ A collection of Node.js scripts to automate and manage Postman collections via t
 
 - **addResponseToRequest.mjs**: Adds a sample response to a specific request in a local Postman collection JSON file.
 - **deleteAllCollections.mjs**: Deletes all collections in a given Postman workspace using the Postman API.
+- **deleteOlderDuplicates.mjs**: Finds collections with duplicate names in a workspace and deletes all but the most recently updated one for each name.
 - **getCollectionsWithVariables.mjs**: Lists all collections in a workspace and displays their collection-level variables.
 - **listAllFolders.mjs**: Lists all folders (and subfolders) in each collection, highlighting folders with multiple items.
 
