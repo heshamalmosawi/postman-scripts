@@ -46,7 +46,7 @@ async function main() {
 
         for (const col of matchingCollections) {
             console.log(`Deleting: ${col.name} (${col.uid})`);
-             deleteCollection(col.uid);
+            await deleteCollection(col.uid);
         }
 
         console.log("Matching collections deleted successfully.");
